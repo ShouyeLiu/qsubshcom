@@ -97,7 +97,7 @@ example: "-wait=123:124:125 -array=1-2 -l host=host1:host2"
 ## Examples
 ```
 # run awk, note: $ shall be escaped by \, 
-qsubshcom "awk -v OFS='\t' '{print \$1,\$2}' <<< 'test test2' > {TASK_ID}" " 1 1G test2 10:00:00 "-array=1-2"
+qsubshcom "awk -v OFS='\t' '{print \$1,\$2}' <<< 'test test2' > {TASK_ID}"  1 1G test2 10:00:00 "-array=1-2"
 
 # run a bash script into the cluster
 qsubshcom "bash ./test.sh" 1 1G test_script 00:05:00 ""
